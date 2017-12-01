@@ -1,95 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link href="https://use.fontawesome.com/4b0bcb6f55.css" media="all" rel="stylesheet" />	
-<meta charset="UTF-8" />
-	
-<title>Bitcoin Converter</title>
-	
-<meta content="width=device-width, initial-scale=1" name="viewport" />
-	<link href="style.css" rel="stylesheet" />
-	
-<script src="https://use.fontawesome.com/4b0bcb6f55.js"></script>
+	<link href="https://use.fontawesome.com/4b0bcb6f55.css" media="all" rel="stylesheet">
+	<meta charset="UTF-8">
+	<title>Bitcoin Converter</title>
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<link href="style.css" rel="stylesheet">
+	<script src="https://use.fontawesome.com/4b0bcb6f55.js">
+	</script>
 	<style>
-	      .alert {
-	      padding: 20px;
-	      background-color: #f44336;
-	      color: white;
-	   }
-	   .closebtn {
-	      margin-left: 15px;
-	      color: white;
-	      font-weight: bold;
-	      float: right;
-	      font-size: 22px;
-	      line-height: 20px;
-	      cursor: pointer;
-	      transition: 0.3s;
-	   }
-	   .closebtn:hover {
-	      color: black;
-	   }
-	   .right {
-		   position:absolute;
-    bottom:0;
-    right:0;
-		   padding:15px;
-		   
-		}
+	         .alert {
+	         padding: 20px;
+	         background-color: #f44336;
+	         color: white;
+	      }
+	      .closebtn {
+	         margin-left: 15px;
+	         color: white;
+	         font-weight: bold;
+	         float: right;
+	         font-size: 22px;
+	         line-height: 20px;
+	         cursor: pointer;
+	         transition: 0.3s;
+	      }
+	      .closebtn:hover {
+	         color: black;
+	      }
+	      .right {
+	          position:absolute;
+	   bottom:0;
+	   right:0;
+	          padding:15px;
+	          
+	       }
 	</style>
-	<body>
-<div class="alert">
+</head>
+<body>
+	<div class="alert">
 		<span class="closebtn" onclick="this.parentElement.style.display='none';">×</span> <strong>Warning!</strong> Please select another conversion before converting Bitcoin to USD.
 	</div>
-	
-<div class="login-page">
+	<div class="login-page">
 		<span class="custom-dropdown"><select id="test">
-			
-<option value="1">
+			<option value="1">
 				BTC to USD
 			</option>
-			
-<option value="2">
+			<option value="2">
 				BTC to mBTC
 			</option>
-			
-<option value="3">
+			<option value="3">
 				BTC to Satoshi
 			</option>
-			
-<option value="4">
+			<option value="4">
 				BTC to Bits
 			</option>
-			
-<option value="5">
+			<option value="5">
 				USD to Bits
 			</option>
-			
-<option value="6">
+			<option value="6">
 				USD to mBTC
 			</option>
-			
-<option value="7">
+			<option value="7">
 				USD to Satoshi
 			</option>
 		</select></span>
-		
-<div class="form">
+		<div class="form">
 			<form class="login-form">
-				
-<h1 id="first" /><input id="BTC" placeholder="BTC" type="text" />
-				
-<h1 id="second" /><input id="USD" placeholder="USD" type="text" />
+				<h1 id="first"></h1><input id="BTC" placeholder="BTC" type="text">
+				<h1 id="second"></h1><input id="USD" placeholder="USD" type="text">
 			</form>
 		</div>
-	</div>
-	<i class="fa fa-question-circle fa-5x right" aria-hidden="true" />
-	
-<script src="https://code.jquery.com/jquery-2.2.4.min.js">
+	</div><i aria-hidden="true" class="fa fa-question-circle fa-5x right"></i> 
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js">
 	</script> 
-	
-<script src="index.js">
+	<script src="index.js">
 	</script>
-
 </body>
 </html>
